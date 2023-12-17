@@ -25,7 +25,7 @@ function validateName() {
 }
 
 function validateUrl() {
-    var regex = /^[A-z a-z 0-9]+\.com$/
+    var regex = /^.+\.com$/
     if (regex.test(siteUrl.value)) {
         siteUrl.classList.replace("is-invalid", "is-valid");
         return true;
