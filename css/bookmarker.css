@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: rgb(245, 231, 240);
+}
+
+::selection {
+    background: rgb(238, 191, 105);
+}
+
+.container .title h1 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+    font-size: 50px;
+    z-index: 0;
+}
+
+.container h1::after {
+    content: '';
+    height: 20px;
+    width: 23%;
+    background-color: rgb(238, 191, 105);
+    position: absolute;
+    left: 38.5%;
+    bottom: 0;
+    z-index: -1;
+    transition: all 1s;
+}
+
+.container h1:hover::after{
+    height: 40px;
+}
+
+.content {
+    border: 2px dotted black;
+    border-left: none;
+    border-right: none;
+}
+
+.content .bookmark {
+  background: linear-gradient(to right,  #3CA55C, #f1de07);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Righteous', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.form span{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.form input{
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.form button{
+    background-color: orangered;
+    width: 15%;
+    padding: 6px 50px;
+    border: none;
+    border-radius: 8px;
+    top: 120%;
+    left: 50%;
+}
+
+table .visit{
+    background-color: yellowgreen;
+    padding: 3px 11px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 6px;
+}
+
+table .delete{
+    background-color: red;
+    padding: 3px 11px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 6px;
+}
+
+.card{
+    top: 29%;
+    left: 30%;
+    width: 40%;
+}
+
+.card .fa-xmark{
+    right:5%
+}
+
+.shadow{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
