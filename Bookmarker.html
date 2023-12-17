@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bookmarker.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body class="position-relative">
     <div class="container pt-5">
-        <div class="title position-relative text-center mb-5">
-            <h1>Bookmarker</h1>
+        <div class="title text-center mb-5">
+            <h1 class="position-relative d-inline-block">Bookmarker</h1>
         </div>
         <div class="content mt-5 pb-4 ">
             <div class="bookmark text-center mt-4">
@@ -33,7 +34,8 @@
                 <i class="fa-solid fa-link mb-3"> <span>Site URL</span></i>
                 <br>
                 <input type="text" placeholder="Website URL" id="siteUrl" class="form-control" oninput="validateUrl()">
-                <button class="translate-middle position-absolute text-white" onclick="addSite()">Submit</button>
+                <button class="translate-middle position-absolute text-white rounded-3"
+                    onclick="addSite()">Submit</button>
             </div>
         </div>
         <table class="w-100 text-center m-auto mt-4">
@@ -49,7 +51,7 @@
 
             </tbody>
         </table>
-        <div class="shadow bg-opacity-50 bg-black position-absolute d-none vh-100"  id="popup">
+        <div class="shadow bg-opacity-50 bg-black position-absolute d-none " id="popup">
             <div class="card position-absolute p-3">
                 <div class="card-body position-relative">
                     <i class="fa-solid fa-circle" style="color: #ed1707;"></i>

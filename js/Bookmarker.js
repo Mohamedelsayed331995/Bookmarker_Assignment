@@ -56,6 +56,8 @@ function addSite() {
 function clearForm() {
     siteName.value = "";
     siteUrl.value = "";
+    siteName.classList.remove("is-invalid", "is-valid");
+    siteUrl.classList.remove("is-invalid", "is-valid");
 }
 
 function displaySites(siteList) {

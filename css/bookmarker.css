@@ -4,7 +4,6 @@
 }
 
 body {
-
     background-color: rgb(245, 231, 240);
 }
 
@@ -26,11 +25,11 @@ body {
 .container h1::after {
     content: '';
     height: 20px;
-    width: 23%;
+    width: 100%;
     background-color: rgb(238, 191, 105);
     position: absolute;
-    left: 38.5%;
-    bottom: 0;
+    left: 0;
+    bottom:0;
     z-index: -1;
     transition: all 1s;
 }
@@ -46,7 +45,7 @@ body {
 }
 
 .content .bookmark {
-  background: linear-gradient(to right,  #3CA55C, #f1de07);
+  background-image: linear-gradient(to right,  #3CA55C, #b5ac49);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Righteous', sans-serif;
@@ -68,12 +67,14 @@ body {
 
 .form button{
     background-color: orangered;
-    width: 15%;
-    padding: 1% 2%;
+    width: 90px;
+    padding: 5px 10px ;
     border: none;
-    border-radius: 8px;
     top: 120%;
     left: 50%;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 table .visit{
@@ -94,6 +95,12 @@ table .delete{
     margin-top: 6px;
 }
 
+table .thead{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
 .card{
     top: 29%;
     left: 30%;
@@ -109,4 +116,5 @@ table .delete{
     bottom: 0;
     right: 0;
     left: 0;
+    max-height: 100%;
 }
